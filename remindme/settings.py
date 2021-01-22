@@ -2,6 +2,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 from pathlib import Path
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,6 +30,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'livereload',
+    'django_apscheduler',
+    'api.apps.ApiConfig',
+    'frontend.apps.FrontendConfig',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -54,8 +60,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'api.apps.ApiConfig',
-                'frontend'
             ],
         },
     },
