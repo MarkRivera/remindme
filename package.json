@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch --entry ./frontend/src/components/index.js -o ./frontend/static/frontend/",
-    "build": "webpack --mode production --entry ./frontend/src/components/index.js -o ./frontend/static/frontend/"
+    "dev": "webpack --mode development --watch --entry ./frontend/src/components/index.js -o ./static/frontend/",
+    "build": "webpack --mode production --entry ./frontend/src/components/index.js -o ./static/frontend/"
   },
   "author": "",
   "license": "ISC",
