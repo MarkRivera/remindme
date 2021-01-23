@@ -1,2 +1,2 @@
 web: gunicorn remindme.wsgi
-clock: api.scheduler.scheduler
+clock: python api.scheduler.scheduler
